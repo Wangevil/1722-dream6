@@ -1,0 +1,68 @@
+{
+  "ret": true,
+  "data": {
+    "header": "../../../static/photo/10.jpg",
+    "swiperlist": [{
+      "id": "001",
+      "url": "../../../static/photo/10.jpg",
+      "tit": "1/10",
+      "link": "/list"
+    },
+    {
+      "id": "002",
+      "url": "../../../static/photo/2.png",
+      "tit": "2/10",
+      "link": "/list"  
+    },
+    {   
+      "id": "003",
+      "url": "../../../static/photo/3.png",
+      "tit": "3/10",
+      "link": "/list" 
+    },
+    {
+      "id": "004",
+      "url": "../../../static/photo/4.png",
+      "tit": "4/10",
+      "link": "/list" 
+    },
+    {
+      "id": "005",
+      "url": "../../../static/photo/5.png",
+      "tit": "5/10",
+      "link": "/list" 
+    },
+    {   
+      "id": "006",
+      "url": "../../../static/photo/6.png",
+      "tit": "6/10",
+      "link": "/list"  
+    },
+    {
+      "id": "007",
+      "url": "../../../static/photo/7.png",
+      "tit": "7/10",
+      "link": "/list"  
+    },
+      {
+      "id": "008",
+      "url": "../../../static/photo/8.png",
+      "tit": "8/10",
+      "link": "/list"  
+    },
+    {   
+      "id": "009",
+      "url": "../../../static/photo/9.png",
+      "tit": "9/10",
+      "link": "/list"  
+    },
+    {
+      "id": "010",
+      "url": "../../../static/photo/1.png",
+      "tit": "10/10",
+      "link": "/list" 
+    }
+  ]
+  }
+}
+
