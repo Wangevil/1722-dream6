@@ -12,6 +12,7 @@
   	<message-reserve v-show="show"></message-reserve>
   	<message-list :listInfo="listInfo"></message-list>
   	<message-comment :comList="comList"></message-comment>
+  	<message-footer></message-footer>
   </div>
 </template>
 
@@ -23,6 +24,7 @@
   import MessageReserve from './reserve'
   import MessageList from './list'
   import MessageComment from './comment'
+  import MessageFooter from './footer'
   import axios from 'axios'
   export default {
     name: 'message',
@@ -42,7 +44,8 @@
       MessageRecommend,
       MessageReserve,
       MessageList,
-      MessageComment
+      MessageComment,
+      MessageFooter
     },
     methods: {
       getListInfo () {
