@@ -1,0 +1,67 @@
+{
+  "ret": true,
+  "data": {
+    "city": "北京",
+    "viewList": [{
+      "id": "101",
+      "title":"[陪无线耳麦]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/p/tts4/1701/6d/c48662846ee9aa02.jpg_r_390x260x90_85e7c536.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "102",
+      "title":"[美食之旅]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/p/tts9/1712/c8/cf75bbcda03b0a02.jpg_r_390x260x90_6639eafc.jpg",
+      "price": "67",
+      "sold":"223"
+    },{
+      "id": "103",
+      "title":"[品护国寺小吃]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/p/tts8/1705/48/795ded0be5d69702.jpg_r_390x260x90_114c73a6.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "104",
+      "title":"[陪无线耳麦]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1504/de/de67e39701f98515.water.jpg_256x160_1ccdec10.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "105",
+      "title":"[陪无线耳麦]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_256x160_f977b5d4.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "106",
+      "title":"[陪无线耳麦]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_256x160_6b62ea82.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "107",
+      "title":"[陪无线耳麦]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://imgs.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_256x160_a6703da7.jpg",
+      "price": "138",
+      "sold":"449"
+    },{
+      "id": "108",
+      "title":"[休闲纯玩半日游]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://img1.qunarzz.com/travel/poi/1801/94/39d84cd743f3f837.jpg",
+      "price": "39",
+      "sold":"455"
+    },{
+      "id": "108",
+      "title":"[休闲纯玩半日游]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://img1.qunarzz.com/travel/poi/1801/94/39d84cd743f3f837.jpg",
+      "price": "39",
+      "sold":"455"
+    },{
+      "id": "108",
+      "title":"[休闲纯玩半日游]天安门+故宫*赠珍宝馆+八达岭长城+鸟巢一日游",
+      "imgUrl": "https://img1.qunarzz.com/travel/poi/1801/94/39d84cd743f3f837.jpg",
+      "price": "39",
+      "sold":"455"
+    }]
+  }
+}
