@@ -9,22 +9,22 @@
         <div class="phonenum">
           <span class="info-span cell">手机号</span>
           <div class="area-code">+86 ></div>
-          <input type="text" class="inp-phone" placeholder="请填写手机号"/>
+          <input type="text" class="inp-phone" :class="{curr:flag}" @blur="handlePhoneBlur" placeholder="请填写手机号"/>
         </div>
         <div class="idcard">
           <span class="info-span id">身份证</span>
-          <input type="text" class="inp-idcard" placeholder="请填写正确的身份证号码" />
+          <input type="text" class="inp-idcard" :class="{curr:flag}" @blur="handleIdcardBlur" placeholder="请填写正确的身份证号码" />
         </div>
       </div>
       <div class="info" v-show="show" v-for="item of list">
         <div class="visitorname">
           <span class="info-span visitor-num">游客<p class="vis-count">{{item}}</p></span>
-          <input type="text" class="inp-name" placeholder="游客名字" @blur="handleNameBlur" :class="{curr:flag}" />
+          <input type="text" class="inp-name" placeholder="游客名字"  @blur="handleNameBlur" :class="{curr:flag}" />
           <i class="iconfont">&#xe63a;</i>
         </div>
         <div class="idcard">
           <span class="info-span id">身份证</span>
-          <input type="text" class="inp-idcard" placeholder="请填写正确的身份证号码" />
+          <input type="text" class="inp-idcard" :class="{curr:flag}" @blur="handleIdcardBlur" placeholder="请填写正确的身份证号码" />
         </div>
       </div>
     </div>
@@ -61,6 +61,18 @@ export default {
       if (e.target.value === '') {
         this.flag = true
         e.target.value = '游客名字'
+      }
+    },
+    handlePhoneBlur (e) {
+      if (e.target.value === '') {
+        this.flag = true
+        e.target.value = '请填写手机号'
+      }
+    },
+    handleIdcardBlur (e) {
+      if (e.target.value === '') {
+        this.flag = true
+        e.target.value = '请填写正确的身份证号码'
       }
     }
   },

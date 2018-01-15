@@ -53,9 +53,9 @@ export default {
       }
     },
     handelClick (index) {
-      this.f1 = (index === 1) ? true : false
-      this.f2 = (index === 2) ? true : false
-      this.f3 = (index === 3) ? true : false
+      this.f1 = (index === 1) ? 1 : 0
+      this.f2 = (index === 2) ? 1 : 0
+      this.f3 = (index === 3) ? 1 : 0
     }
   }
 }
