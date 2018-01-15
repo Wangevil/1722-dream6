@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-<<<<<<< HEAD
 import FastClick from 'fastclick'
 import 'assets/css/reset.css'
 import 'assets/css/iconfont/iconfont.css'
