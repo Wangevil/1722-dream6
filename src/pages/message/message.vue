@@ -5,14 +5,24 @@
   	</message-header>
   	<message-swiper :pho='list' 
   	                v-show='show'
-  	                v-on:click.native='handleswiperClick'>
+  	                v-on:click.native='handleClickShow'>
   	</message-swiper>
+  	<message-nav></message-nav>
+  	<message-recommend v-on:reserve="handleResClick"></message-recommend>
+  	<message-reserve v-show="show"></message-reserve>
+  	<message-list :listInfo="listInfo"></message-list>
+  	<message-comment :comList="comList"></message-comment>
   </div>
 </template>
 
 <script>
   import MessageHeader from './header'
   import MessageSwiper from './swiper'
+  import MessageNav from './nav'
+  import MessageRecommend from './recommend'
+  import MessageReserve from './reserve'
+  import MessageList from './list'
+  import MessageComment from './comment'
   import axios from 'axios'
   export default {
     name: 'message',
@@ -20,12 +30,19 @@
       return {
         list: [],
         show: false,
-        headerPho: ''
+        headerPho: '',
+        listInfo: [],
+        comList: []
       }
     },
     components: {
       MessageHeader,
-      MessageSwiper
+      MessageSwiper,
+      MessageNav,
+      MessageRecommend,
+      MessageReserve,
+      MessageList,
+      MessageComment
     },
     methods: {
       getListInfo () {
@@ -36,6 +53,8 @@
       handlegetListSucc (res) {
         this.list = res.data.data.swiperlist
         this.headerPho = res.data.data.header
+        this.listInfo = res.data.data.listInfo
+        this.comList = res.data.data.comlist
       },
       handlegetListerror () {
         console.log('error')
@@ -43,7 +62,7 @@
       handleClickShow () {
         this.show = !this.show
       },
-      handleswiperClick () {
+      handleResClick () {
         this.show = !this.show
       }
     },
