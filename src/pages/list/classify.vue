@@ -12,11 +12,11 @@
           <span>推荐排序</span>
         </li>
       </ul>
-      <!--<div class="mask-one">
+      <div class="mask-one" :class="maskShow == true ? 'show' : ''">
         <div class="mask-text">
-          
+          什么情况
         </div>
-      </div>-->-->
+      </div>
     </div>
   </div>
   
@@ -30,7 +30,8 @@
         c1: false,
         c2: false,
         c3: false,
-        searchBarFixed: false
+        searchBarFixed: false,
+        maskShow: true
       }
     },
     methods: {
@@ -38,6 +39,11 @@
         this.c1 === 1 ? (this.c1 = 0) : (this.c1 = (sign === 1) ? 1 : 0)
         this.c2 === 1 ? (this.c2 = 0) : (this.c2 = (sign === 2) ? 1 : 0)
         this.c3 === 1 ? (this.c3 = 0) : (this.c3 = (sign === 3) ? 1 : 0)
+        if (this.maskShow === true && this.c1 === 1) {
+          this.maskShow = false
+        } else {
+          this.maskShow = true
+        }
       },
       handleScroll () {
         const scrollTop = window.pageYOffset
@@ -70,6 +76,8 @@
     color: #2e2e2e
     font-weight: 800
     z-index: 999
+    .show
+      display: none
     ul
       float: left
       border-bottom: .01rem solid #e7e7e9
