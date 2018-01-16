@@ -11,13 +11,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.17.1",
     "fastclick": "^1.0.6",
-=======
-    "fastclick": "^1.0.6",
-    "axios": "^0.17.1",
->>>>>>> 562ef248101dbdcfcc08ed05c82c0b401a74ae41
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue": "^2.5.2",

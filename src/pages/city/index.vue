@@ -3,9 +3,7 @@
    <city-header></city-header>
    <city-list :hostct="hostcityInfo"></city-list>
  </div>
-
 </template>
-
 <script>
   import CityHeader from './header'
   import CityList from './citylist'
@@ -40,8 +38,6 @@
     created () {
       this.getIndexDate()
     }
-    
-
 }
 </script>
 

@@ -18,6 +18,7 @@ export default new Router({
       path: '/message',
       name: 'Message',
       component: Message
+    },
     {
       path: '/',
       name: 'Index',

@@ -1,14 +1,4 @@
 <template>
-<<<<<<< HEAD
-	<div id="index">index</div>
-</template>
-
-<script>
-</script>
-
-<style>
-</style>
-=======
   <div>
    <index-header></index-header>
    <index-swiper :list="swiperInfo"></index-swiper>
@@ -63,7 +53,7 @@
         this.introInfo = data.introList
         this.gowhereInfo = data.gowhereList
         if (!this.$store.state.city) {
-          this.$store.dispatch('changeCityDelayFiveSeconds',data.city)
+          this.$store.dispatch('changeCityDelayFiveSeconds', data.city)
         }
       },
       handleGetDataErr () {
