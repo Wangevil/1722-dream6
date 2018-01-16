@@ -41,7 +41,7 @@
     },
     methods: {
       getIndexDate () {
-        axios.get('/api/index.json')
+        axios.get('/api/index.json?city=' + this.$store.state.city)
          .then(this.handleGetDataSucc.bind(this))
          .catch(this.handleGetDataErr.bind(this))
       },
@@ -52,6 +52,9 @@
         this.iconsInfo = data.iconsList
         this.introInfo = data.introList
         this.gowhereInfo = data.gowhereList
+        if (!this.$store.state.city) {
+          this.$store.dispatch('changeCityDelayFiveSeconds',data.city)
+        }
       },
       handleGetDataErr () {
         console.log('error')
@@ -59,6 +62,11 @@
     },
     created () {
       this.getIndexDate()
+    },
+    watch: {
+      '$store.state.city' () {
+        this.getIndexDate()
+      }
     }
 }
 </script>

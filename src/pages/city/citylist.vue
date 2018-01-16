@@ -3,13 +3,13 @@
    <div class="location-containner">
      <p class="area-title">您的位置</p>
       <div class="location">
-        <div class="location-city">{{list}}</div>
+        <div class="location-city">{{$store.state.city}}</div>
       </div>
    </div>
    <div class="hotCity-containner">
       <p class="area-title">热门城市</p>
       <div class="hotCity location">
-        <div class="hotCity-city location-city" v-for="item of hostct" :key="item.id">
+        <div class="hotCity-city location-city" v-for="item of hostct" :key="item.id" @click="handleClick">
            {{item.city}}
         </div>
       </div>
@@ -20,8 +20,13 @@
 export default {
   name: 'city-list',
   props: {
-    list: String,
     hostct: Array
+  },
+  methods: {
+    handleClick (e) {
+      this.$store.commit('changeCity', e.target.innerHTML)
+      this.$router.push('/')
+    }
   }
 }
 </script>

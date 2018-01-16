@@ -5,7 +5,7 @@
       <span class="iconfont search-icon">&#xe632;</span>
     请输入城市/景点/游玩主题
     </div>
-    <div class="city" @click="handleCityClick">乌鲁木齐</div>
+    <div class="city" @click="handleCityClick">  {{$store.getters.doubleCity}}</div>
   </div>
 </template>
 
