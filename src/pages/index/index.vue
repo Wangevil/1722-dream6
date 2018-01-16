@@ -1,4 +1,14 @@
 <template>
+<<<<<<< HEAD
+	<div id="index">index</div>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
+=======
   <div>
    <index-header></index-header>
    <index-swiper :list="swiperInfo"></index-swiper>
@@ -72,3 +82,4 @@
 </script>
 
 <style></style>
+>>>>>>> origin/master
